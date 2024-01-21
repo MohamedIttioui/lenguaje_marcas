@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrega [
+
+<!ELEMENT entrega (lote+)>
+<!ELEMENT lote (palet+)>
+<!ELEMENT palet (numero_cajas, contenido, peso, forma_manipulacion)>
+
+<!ELEMENT numero_cajas (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT forma_manipulacion (#PCDATA)>
+
+<!ELEMENT contenido (nom_componente, procedencia?, num_serie, peso_componente)>
+<!ELEMENT nom_componente (#PCDATA)>
+<!ELEMENT procedencia (pais+)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT num_serie (#PCDATA)>
+<!ELEMENT peso_componente (#PCDATA)>
+<!ATTLIST peso_componente unidad (kilos | gramos) #IMPLIED>
+]>
+
+<entrega>
+    
+    <lote>
+        
+        <palet>
+            
+            <numero_cajas>10</numero_cajas>
+            <contenido>
+                <nom_componente>Monitor Samsung</nom_componente>
+                <procedencia>
+                    <pais>Corea Del Sur</pais>
+                </procedencia>
+                <num_serie>123ABC</num_serie>
+                <peso_componente unidad="gramos">600</peso_componente>
+            </contenido>
+            <peso>60</peso>
+            <forma_manipulacion>No lo he entendido</forma_manipulacion>
+        
+        </palet>
+
+        <palet>
+            
+            <numero_cajas>20</numero_cajas>
+            <contenido>
+                <nom_componente>Teclado y Ratón</nom_componente>
+                <num_serie>123ABC</num_serie>
+                <peso_componente>200</peso_componente>
+            </contenido>
+            <peso>4</peso>
+            <forma_manipulacion>No lo he entendido</forma_manipulacion>
+        
+        </palet>
+
+    </lote>
+    
+</entrega>

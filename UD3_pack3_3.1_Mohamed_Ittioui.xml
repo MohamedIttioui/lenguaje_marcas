@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaventas [
+
+<!ELEMENT listaventas (venta+)>
+<!ELEMENT venta (importe, comprador, vendedor, fecha?, codigo_factura)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT comprador (#PCDATA)>
+<!ELEMENT vendedor (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT codigo_factura (#PCDATA)>
+]>
+<listaventas>
+  <venta>
+    <importe>500.00</importe>
+    <comprador>Juan Gómez</comprador>
+    <vendedor>Marcos Sierra</vendedor>
+    <fecha>2024-01-01</fecha>
+    <codigo_factura>LMN321</codigo_factura>
+  </venta>
+  <venta>
+    <importe>800.75</importe>
+    <comprador>Eric López</comprador>
+    <vendedor>Carlos Fábrigas</vendedor>
+    <codigo_factura>AXB123</codigo_factura>
+  </venta>
+</listaventas>
