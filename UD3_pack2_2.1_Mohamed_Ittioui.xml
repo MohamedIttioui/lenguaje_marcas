@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<viaje>
+
+  <entrada id="1">
+    <nom>Jose Luis</nom>
+    <llinatge>Romero</llinatge>
+    <data_inici>2024-03-20</data_inici>
+    <data_final>2024-03-30</data_final>
+    <origen_viaje>Mahón</origen_viaje>
+    <relacio_destino>
+      <nom_ciutat>Roma</nom_ciutat>
+      <nom_hotel>Hotel Smeraldo</nom_hotel>
+      <nombre_nits>9</nombre_nits>
+    </relacio_destino>
+    <preu>900 €</preu>
+  </entrada>
+
+  <entrada id="2">
+    <nom>Sebastià</nom>
+    <llinatge>Pons</llinatge>
+    <data_inici>2024-03-27</data_inici>
+    <data_final>2024-04-01</data_final>
+    <origen_viaje>Barcelona</origen_viaje>
+    <relacio_destino>
+      <nom_ciutat>París</nom_ciutat>
+      <nom_hotel>Hotel Paris Louvre Opéra</nom_hotel>
+      <nombre_nits>5</nombre_nits>
+    </relacio_destino>
+    <preu>700 €</preu>
+  </entrada>
+
+  <entrada id="2">
+    <nom>Joan</nom>
+    <llinatge>Martí</llinatge>
+    <data_inici>2024-05-02</data_inici>
+    <data_final>2024-05-8</data_final>
+    <origen_viaje>Madrid</origen_viaje>
+    <relacio_destino>
+      <nom_ciutat>Frankfurt</nom_ciutat>
+      <nom_hotel>Grand Hotel Downtown</nom_hotel>
+      <nombre_nits>6</nombre_nits>
+    </relacio_destino>
+    <preu>300 €</preu>
+  </entrada>
+
+</viaje>

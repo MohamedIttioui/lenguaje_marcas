@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comando [
+
+<!ELEMENT comando (tractores+)>
+<!ELEMENT tractores (componente+)> 
+<!ELEMENT componente (nom_fabricante, data_entrga, es_fragil?, peso, num_serie, kmmaxims?)>
+
+<!ELEMENT nom_fabricante (#PCDATA)>
+<!ELEMENT data_entrga (#PCDATA)>
+<!ATTLIST data_entrga   any CDATA #REQUIRED mes CDATA #REQUIRED dia CDATA #IMPLIED>
+<!ELEMENT es_fragil (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ATTLIST peso unidad (kilos | gramos) #REQUIRED>
+<!ELEMENT num_serie (#PCDATA)>
+<!ELEMENT kmmaxims (#PCDATA)>
+]>
+
+    <comando>
+    
+        <tractores>
+        
+            <componente>
+            
+                <nom_fabricante>FICOSA AUTOMOTIVE</nom_fabricante>
+                <data_entrga any="2023" mes="10" dia="01"/>
+                <es_fragil>Sí</es_fragil>
+                <peso unidad="gramos">1500</peso>
+                <num_serie>321AB</num_serie>
+                <kmmaxims>1000</kmmaxims>
+            
+            </componente>
+
+            <componente>
+            
+                <nom_fabricante>ELECTROSON TELECOMUNICACION</nom_fabricante>
+                <data_entrga any="2024" mes="01" dia="10"/>
+                <es_fragil>No</es_fragil>
+                <peso unidad="kilos">300</peso>
+                <num_serie>123BA</num_serie>
+            
+            </componente>
+
+            <componente>
+            
+                <nom_fabricante>ELECTROSON TELECOMUNICACION</nom_fabricante>
+                <data_entrga any="2023" mes="12" dia="31"/>
+                <peso unidad="kilos">100</peso>
+                <num_serie>456CD</num_serie>
+                <kmmaxims>125000</kmmaxims>
+
+            </componente>
+
+        </tractores>
+    
+    </comando>
+

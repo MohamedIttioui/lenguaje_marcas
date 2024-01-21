@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE operaciones [
+<!ELEMENT operaciones (operacion)>
+<!ELEMENT operacion (venta | compra)+> 
+<!ELEMENT venta (titulo+, CantidadTotal, b_realizado, import)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT CantidadTotal (#PCDATA)>
+<!ELEMENT b_realizado (#PCDATA)>
+<!ELEMENT import (#PCDATA)>
+<!ATTLIST import moneda CDATA #REQUIRED>
+<!ELEMENT compra (title+, nom_provedor)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT nom_provedor (#PCDATA)>
+<!ATTLIST compra fechacompra CDATA #REQUIRED>
+]>
+
+<operaciones>
+
+  <operacion>
+  
+    <venta>
+      <titulo>El Quijote</titulo>
+      <CantidadTotal>20</CantidadTotal>
+      <b_realizado>Sí</b_realizado>
+      <import moneda ="euros">15 €</import>
+    </venta>
+
+    <venta>
+      <titulo>El Lazarillo</titulo>
+      <CantidadTotal>25</CantidadTotal>
+      <b_realizado>Sí</b_realizado>
+      <import moneda ="euros">11.99 €</import>
+    </venta>
+
+    <venta>
+      <titulo>El Hijo Olvidado</titulo>
+      <CantidadTotal>30</CantidadTotal>
+      <b_realizado>Sí</b_realizado>
+      <import moneda ="euros">21.75 €</import>
+    </venta>
+    
+    <compra fechacompra="fecha">
+      <title>La Sangra Del Padre</title>
+      <nom_provedor>Alfonso Goizueta</nom_provedor>
+    </compra>
+
+  </operacion>
+
+</operaciones>
