@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ficheros [
+
+<!ELEMENT ficheros (listaFacturas)>
+<!ELEMENT listaFacturas (factura+)>
+<!ELEMENT factura (emisor, pagador, importe)>
+<!ATTLIST factura fecha CDATA #IMPLIED>
+
+<!ATTLIST emisor cif CDATA #REQUIRED>
+<!ELEMENT emisor (nom, volumenVendas?)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT volumenVendas (#PCDATA)>
+
+<!ATTLIST pagador cif CDATA #REQUIRED>
+<!ELEMENT pagador (nom, volumenVendas?)>
+<!ELEMENT importe (#PCDATA)>
+]>
+
+<ficheros>
+
+  <listaFacturas>
+
+    <factura fecha="2024-01-01">
+
+      <emisor cif="1230005D">
+        <nom>ABC123</nom>
+        <volumenVendas>100</volumenVendas>
+      </emisor>
+      <pagador cif="125098J">
+        <nom>XYZ321</nom>
+      </pagador>
+      <importe>800</importe>
+
+    </factura>
+
+    <factura>
+
+      <emisor cif="1230005D">
+        <nom>ABC123</nom>
+      </emisor>
+      <pagador cif="125098J">
+        <nom>XYZ321</nom>
+        <volumenVendas>50</volumenVendas>
+      </pagador>
+      <importe>500</importe>
+      
+    </factura>
+  
+  </listaFacturas>
+
+</ficheros>
