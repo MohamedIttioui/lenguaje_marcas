@@ -13,7 +13,7 @@
 
   <!ELEMENT lista_asignaturas (asignatura+)>
   <!ELEMENT asignatura (nombre,profesor)>
-  <!ATTLIST asignatura codigo CDATA #IMPLIED>
+  <!ATTLIST asignatura codigo CDATA #REQUIRED
   <!ELEMENT profesor (NRP,nombre,apellido,segundo_apellido?)>
   <!ELEMENT NRP (#PCDATA)>
 ]>
