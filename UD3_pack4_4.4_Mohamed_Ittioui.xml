@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE productes [
+
+<!ELEMENT productes (futur+, divisa+, bo+, lletra+)>
+<!ELEMENT futur (producte, mercat)>
+<!ATTLIST futur preu CDATA #REQUIRED origen CDATA #REQUIRED>
+
+<!ELEMENT divisa (nom, canvi*)>
+<!ATTLIST divisa preu CDATA #REQUIRED
+                 origen CDATA #REQUIRED
+                 estabilitat CDATA #IMPLIED>
+<!ELEMENT bo (pais_de_procedencia, valor_desitjat, valor_minim, valor_maxim)>
+
+<!ATTLIST bo preu CDATA #REQUIRED
+             origen CDATA #REQUIRED
+             estabilitat CDATA #IMPLIED>
+<!ELEMENT lletra (preu, origen, tipus_interes, pais_emissor)>
+
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT tipus_interes (#PCDATA)>
+<!ELEMENT pais_emissor (#PCDATA)>
+<!ELEMENT producte (#PCDATA)>
+<!ELEMENT mercat (#PCDATA)>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT canvi (#PCDATA)>
+<!ATTLIST canvi moneda CDATA #REQUIRED>
+<!ELEMENT pais_de_procedencia (#PCDATA)>
+<!ELEMENT valor_desitjat (#PCDATA)>
+<!ELEMENT valor_minim (#PCDATA)>
+<!ELEMENT valor_maxim (#PCDATA)>
+]>
+
+<productes>
+    <futur preu="1000" origen="Madrid">
+        <producte>Oro</producte>
+        <mercat>España</mercat>
+    </futur>
+    <divisa preu="1.2" origen="Nova York" estabilitat="estable">
+        <nom>Euro</nom>
+        <canvi moneda="USD">1.1</canvi>
+    </divisa>
+    <bo preu="500" origen="Frankfurt" estabilitat="inestable">
+        <pais_de_procedencia>Alemania</pais_de_procedencia>
+        <valor_desitjat>550</valor_desitjat>
+        <valor_minim>450</valor_minim>
+        <valor_maxim>600</valor_maxim>
+    </bo>
+    <lletra>
+        <preu>2000</preu> 
+        <origen>Tokio</origen>
+        <tipus_interes>0.02</tipus_interes>
+        <pais_emissor>Japón</pais_emissor>
+    </lletra>
+</productes>
