@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subasta xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="UD3_pack6_6.3_Mohamed_Ittioui.xsd">
+  
+  <objeto>
+    <propietario>Juan Pérez</propietario>
+    <precio_salida>500.00</precio_salida>
+    <precio_minimo>300.00</precio_minimo>
+  </objeto>
+  <objeto>
+    <propietario>Maria López</propietario>
+    <precio_salida>1000.00</precio_salida>
+  </objeto>
+  <objeto>
+    <propietario>Carlos García</propietario>
+    <precio_salida>750.00</precio_salida>
+    <precio_minimo>600.00</precio_minimo>
+  </objeto>
+</subasta>
