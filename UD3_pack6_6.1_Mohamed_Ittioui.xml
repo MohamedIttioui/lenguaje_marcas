@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<registre_temperatura
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="UD3_pack6_6.1_Mohamed_Ittioui.xsd">
+
+  <provincia>Zamora</provincia>
+  <data>2022-01-07</data>
+  <temperatura_minima>-5</temperatura_minima>
+  <temperatura_maxima>4</temperatura_maxima>
+  <incidencies>
+    <incidencia nom="fred" severitat="alta"/>
+    <incidencia nom="neu" severitat="mitjana"/>
+    <incidencia nom="pluja" severitat="baixa"/>
+    <incidencia nom="calor" severitat="alta"/>
+  </incidencies>
+</registre_temperatura>

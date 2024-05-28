@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="UD3_pack6_6.4_Mohamed_Ittioui.xsd">
+    <empleado id="1">
+        <nombre>Juan Pérez</nombre>
+        <fecha_contrato>
+            <dia>01</dia>
+            <mes>01</mes>
+            <año>2022</año>
+        </fecha_contrato>
+        <puesto>Gerente de Ventas</puesto>
+        <jefe_directo>0</jefe_directo> <!-- No tiene jefe directo -->
+        <sueldo>5000.00</sueldo>
+        <titulos_academicos>
+            <titulo>Licenciado en Administración de Empresas</titulo>
+        </titulos_academicos>
+        <sede>Madrid</sede>
+        <observaciones>Empleado del mes en enero de 2023.</observaciones>
+        <meritos>Buen líder de equipo.</meritos>
+        <demeritos>Llega tarde ocasionalmente.</demeritos>
+    </empleado>
+    <empleado id="2">
+        <nombre>Marta López</nombre>
+        <fecha_contrato>
+            <dia>15</dia>
+            <mes>03</mes>
+            <año>2023</año>
+        </fecha_contrato>
+        <puesto>Supervisor de Ventas</puesto>
+        <jefe_directo>1</jefe_directo> 
+        <sueldo>3500.00</sueldo>
+        <titulos_academicos>
+            <titulo>Grado en Marketing</titulo>
+        </titulos_academicos>
+        <sede>Barcelona</sede>
+    </empleado>
+    <empleado id="3">
+        <nombre>María García</nombre>
+        <fecha_contrato>
+            <dia>10</dia>
+            <mes>05</mes>
+            <año>2022</año>
+        </fecha_contrato>
+        <puesto>Analista de Marketing</puesto>
+        <jefe_directo>1</jefe_directo>
+        <sueldo>3800.00</sueldo>
+        <titulos_academicos>
+            <titulo>Licenciada en Publicidad</titulo>
+            <titulo>Máster en Marketing Digital</titulo>
+        </titulos_academicos>
+        <sede>Madrid</sede>
+    </empleado>
+    <empleado id="4">
+        <nombre>Luis Ramírez</nombre>
+        <fecha_contrato>
+            <dia>20</dia>
+            <mes>11</mes>
+            <año>2023</año>
+        </fecha_contrato>
+        <puesto>Desarrollador Web</puesto>
+        <jefe_directo>2</jefe_directo> 
+        <sueldo>4000.00</sueldo>
+        <sede>Barcelona</sede>
+    </empleado>
+    <empleado id="5">
+        <nombre>Sofía Martínez</nombre>
+        <fecha_contrato>
+            <dia>05</dia>
+            <mes>02</mes>
+            <año>2023</año>
+        </fecha_contrato>
+        <puesto>Asistente Administrativo</puesto>
+        <jefe_directo>1</jefe_directo> 
+        <sueldo>3000.00</sueldo>
+        <titulos_academicos/>
+        <sede>Valencia</sede>
+    </empleado>
+</empresa>
