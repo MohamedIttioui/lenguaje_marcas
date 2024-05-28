@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.confirmation {
+    text-align: center;
+    border: 1px solid var(--color-texto-principal);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.confirmation h1 {
+    color: var(--color-destacado);
+}
+
+.confirmation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.confirmation,  h1,  p,  ul {
+    margin: 10px;
+    padding: 5px;
+}
+
+
+
+/* Estilos para móviles */
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    main {
+        width: 100%;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    main {
+        width: 80%;
+    }
+}
+
+/* Estilos para desktop */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+    main {
+        width: 80%;
+    }
+}

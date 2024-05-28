@@ -1,0 +1,192 @@
+/* Colores */
+:root {
+    --color-texto-principal: #1D201F;
+    --color-fondo: #FFFFF2;
+    --color-destacado: #FECC01;
+    --color-boton: #E8391C;
+    --color-enlace: #6F2EEF;
+}
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo', monospace;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+}
+
+h1, h2, h3{
+    font-family: 'Sedan SC', serif;
+}
+
+#header img{
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+}
+
+nav ul li {
+    color: var(--color-texto-principal);
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    color: var(--color-enlace);
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--color-fondo);
+}
+
+nav ul li:hover ul {
+    display: block;
+    padding: 10px;
+}
+
+nav ul li:hover ul li {
+    display: block;
+}
+
+nav > div, nav > .cart{
+    display: inline;
+}
+
+#header > img{
+    display: inline;
+}
+
+nav > ul{
+    display: inline;
+}
+
+nav > div{
+    margin-left: 100px;
+    text-align: center;
+}
+
+nav > .cart{
+    float: right;
+}
+
+nav > div button{
+    margin-right: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+nav > div input{
+    width: 600px;
+    height: 25px;
+}
+
+button {
+    background-color: var(--color-boton);
+    color: var(--color-fondo);
+    border-radius: 5px;
+}
+
+footer {
+    clear: both;
+    background-color: var(--color-texto-principal);
+    color: var(--color-fondo);
+    width: 100%;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > p{
+    padding: 5px;
+}
+
+footer section {
+    display: inline-block;
+    margin: 0 100px; 
+    padding-bottom: 25px;
+}
+
+
+
+/* Estilos para tablet */
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    body {
+        font-family: 'Chivo', monospace;
+        background-color: var(--color-fondo);
+        color: var(--color-texto-principal);
+        font-size: 15px;
+    }
+
+    #header img {
+        width: 150px;
+        height: 60px;
+        padding: 5px;
+    }
+
+    nav > div {
+        margin-left: 50px;
+    }
+
+    nav > div input {
+        width: 300px;
+        height: 20px;
+    }
+
+    footer section {
+        display: block;
+        margin: 0 50px; 
+    }
+}
+
+/* Estilos para móvil */
+@media only screen and (max-width: 576px) {
+    body {
+        font-family: 'Chivo', monospace;
+        background-color: var(--color-fondo);
+        color: var(--color-texto-principal);
+        font-size: 12px;
+    }
+
+    #header img {
+        width: 120px;
+        height: 48px;
+        padding: 2px;
+    }
+
+    nav > div {
+        margin-left: 20px;
+    }
+
+    nav > div input {
+        width: 200px;
+        height: 15px;
+    }
+
+    footer section {
+        display: block;
+        margin: 0 20px; 
+    }
+}
+

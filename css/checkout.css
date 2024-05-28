@@ -1,0 +1,127 @@
+
+#checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 25px;
+}
+
+#shipping-address, #pickup-point {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+span{
+    color: var(--color-boton);
+}
+
+#summary {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--color-fondo);
+}
+
+#summary, h3, p, hr, button{
+    margin: 15px 5px;
+}
+
+input[type=button]{
+    width: 97%;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: var(--color-boton);
+    color: var(--color-fondo);
+}
+
+form p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+label {
+    flex-basis: 30%;
+    margin: 5px 10px;
+}
+
+input {
+    flex-basis: 60%;
+    margin: 5px;
+}
+
+footer {
+    clear: both;
+    background-color: var(--color-texto-principal);
+    color: var(--color-fondo);
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+/* Estilos para móviles */
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    #checkout {
+        width: 100%;
+        flex-direction: column;
+    }
+    #summary {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+    form p {
+        flex-direction: column;
+    }
+    label, input {
+        flex-basis: 100%;
+    }
+}
+
+
+/* Estilos para tablets */
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    #checkout {
+        width: 80%;
+    }
+    #summary {
+        position: static;
+        width: 80%;
+    }
+}
+
+/* Estilos para desktop */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    #checkout {
+        width: 60%;
+    }
+    #summary {
+        position: absolute;
+        right: 10px;
+        width: 30%;
+    }
+}

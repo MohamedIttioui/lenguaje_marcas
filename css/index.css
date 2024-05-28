@@ -1,0 +1,46 @@
+main section {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+}
+
+main section img {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+main section img:hover{
+    opacity: 80%;
+}
+
+section > h3, section > p{
+    padding: 5px;
+}
+
+.buy-button {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: var(--color-boton);
+    color: var(--color-fondo);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+#load-more {
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: var(--color-boton);
+    color: var(--color-fondo);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
